@@ -22,6 +22,7 @@ form = {
 
 request.post url: url, form: form, (error, response, body) ->
   founded = no
+
   $ = cheerio.load(body)
 
   $('td').each (i, el) ->
@@ -29,15 +30,15 @@ request.post url: url, form: form, (error, response, body) ->
     if td.text() is '������������' # НЕВРОПАТОЛОГ on windows1251
       id = td.prev().prev().text()
       if id is '15' || id is '16'
+        return if founded
+
         tickets_count = td.next().next().text()
         console.info("tickets count on #{new Date} --- ", tickets_count)
-        if parseInt(tickets_count) >= 0
+        if parseInt(tickets_count) > 0
+          founded = yes
           console.info('yay!')
 
-          T.post 'statuses/update',
-            status: 'hello world!'
-          , (err, data, response) ->
-            console.log data
+          T.post 'statuses/update', status: 'yo @milushov, ur tickets founded!', ->
 
 
 
