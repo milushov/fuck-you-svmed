@@ -1,0 +1,26 @@
+{
+  "name": "fuck-you-svmed",
+  "version": "0.0.0",
+  "description": "fuck-you-svmed ==============",
+  "main": "app.coffee",
+  "dependencies": {
+    "cheerio": "~0.18.0",
+    "read-json": "~0.1.0",
+    "request": "~2.49.0",
+    "twit": "~1.1.18"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/milushov/fuck-you-svmed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milushov/fuck-you-svmed/issues"
+  },
+  "homepage": "https://github.com/milushov/fuck-you-svmed"
+}
