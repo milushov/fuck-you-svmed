@@ -1,5 +1,4 @@
-# svmed -- пидоры и выблядки, как я вас ненавижу
-# уебаны криворукие http://dl2.joxi.net/drive/0000/1763/1763/141209/23b61758ef.png
+# svmed уебаны криворукие http://dl2.joxi.net/drive/0000/1763/1763/141209/23b61758ef.png
 
 # */5 * * * * cd /Users/roma/work/fuck-you-svmed && /usr/local/bin/node app.js >>/tmp/fuck-you-svmed.log 2>&1
 # coffee -o . -wc app.coffee
